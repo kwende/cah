@@ -15,6 +15,7 @@ namespace CahWeb
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseUrls("http://localhost:1981")
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
